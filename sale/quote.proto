@@ -1,0 +1,35 @@
+syntax="proto3";
+package quote;
+
+option go_package = "github.com/akolpakov-somehash/go-microservices/proto/sale/quote";
+
+
+message Empty {}
+
+message CustomerId {
+    int32 id = 1;
+}
+
+message QuoteItem {
+    int32 productId = 2;
+    int32 quantity = 3;
+    float price = 4;
+}
+
+message Quote {
+    int32 customerId = 2;
+    repeated QuoteItem items = 3;
+}
+
+message ProductRequest {
+    int32 customerId = 1;
+    int32 productId = 2;
+    int32 quantity = 3;
+}
+
+service QuoteService {
+    rpc GetQuote(CustomerId) returns (Quote) {}
+    rpc AddProduct(ProductRequest) returns (Quote) {}
+    rpc RemoveProduct(ProductRequest) returns (Quote) {}
+    rpc UpdateQuantity(ProductRequest) returns (Quote) {}
+}
