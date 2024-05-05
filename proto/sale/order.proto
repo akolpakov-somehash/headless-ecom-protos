@@ -1,14 +1,9 @@
 syntax="proto3";
-package order;
+package sale;
 
-option go_package = "ecom.sale.order.v1;orderv1";
+option go_package = "ecom.sale.v1;salev1";
 
-
-message Empty {}
-
-message CustomerId {
-    int32 id = 1;
-}
+import "sale/quote.proto";
 
 message OrderId {
     int32 id = 1;

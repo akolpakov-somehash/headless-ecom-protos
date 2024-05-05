@@ -4,7 +4,7 @@
 // - protoc             v5.26.1
 // source: sale/quote.proto
 
-package quotev1
+package salev1
 
 import (
 	context "context"
@@ -19,10 +19,10 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	QuoteService_GetQuote_FullMethodName       = "/quote.QuoteService/GetQuote"
-	QuoteService_AddProduct_FullMethodName     = "/quote.QuoteService/AddProduct"
-	QuoteService_RemoveProduct_FullMethodName  = "/quote.QuoteService/RemoveProduct"
-	QuoteService_UpdateQuantity_FullMethodName = "/quote.QuoteService/UpdateQuantity"
+	QuoteService_GetQuote_FullMethodName       = "/sale.QuoteService/GetQuote"
+	QuoteService_AddProduct_FullMethodName     = "/sale.QuoteService/AddProduct"
+	QuoteService_RemoveProduct_FullMethodName  = "/sale.QuoteService/RemoveProduct"
+	QuoteService_UpdateQuantity_FullMethodName = "/sale.QuoteService/UpdateQuantity"
 )
 
 // QuoteServiceClient is the client API for QuoteService service.
@@ -195,7 +195,7 @@ func _QuoteService_UpdateQuantity_Handler(srv interface{}, ctx context.Context, 
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var QuoteService_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "quote.QuoteService",
+	ServiceName: "sale.QuoteService",
 	HandlerType: (*QuoteServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

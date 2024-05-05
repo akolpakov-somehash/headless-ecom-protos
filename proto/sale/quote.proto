@@ -1,8 +1,7 @@
 syntax="proto3";
-package quote;
+package sale;
 
-option go_package = "ecom.sale.quote.v1;quotev1";
-
+option go_package = "ecom.sale.v1;salev1";
 
 message Empty {}
 
