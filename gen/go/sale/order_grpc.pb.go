@@ -2,9 +2,9 @@
 // versions:
 // - protoc-gen-go-grpc v1.3.0
 // - protoc             v5.26.1
-// source: order.proto
+// source: sale/order.proto
 
-package order
+package orderv1
 
 import (
 	context "context"
@@ -207,5 +207,5 @@ var OrderService_ServiceDesc = grpc.ServiceDesc{
 			ServerStreams: true,
 		},
 	},
-	Metadata: "order.proto",
+	Metadata: "sale/order.proto",
 }

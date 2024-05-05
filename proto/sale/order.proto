@@ -1,7 +1,7 @@
 syntax="proto3";
 package order;
 
-option go_package = "github.com/akolpakov-somehash/go-microservices/proto/sale/order";
+option go_package = "ecom.sale.order.v1;orderv1";
 
 
 message Empty {}

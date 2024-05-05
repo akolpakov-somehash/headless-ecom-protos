@@ -2,9 +2,9 @@
 // versions:
 // - protoc-gen-go-grpc v1.3.0
 // - protoc             v5.26.1
-// source: quote.proto
+// source: sale/quote.proto
 
-package quote
+package quotev1
 
 import (
 	context "context"
@@ -216,5 +216,5 @@ var QuoteService_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "quote.proto",
+	Metadata: "sale/quote.proto",
 }

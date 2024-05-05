@@ -1,7 +1,7 @@
 syntax="proto3";
 package quote;
 
-option go_package = "github.com/akolpakov-somehash/go-microservices/proto/sale/quote";
+option go_package = "ecom.sale.quote.v1;quotev1";
 
 
 message Empty {}
