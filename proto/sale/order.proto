@@ -16,6 +16,7 @@ message OrderItem {
 }
 
 message Order {
+    int32 id = 1;
     int32 customerId = 2;
     repeated OrderItem items = 3;
 }
